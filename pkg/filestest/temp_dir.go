@@ -8,7 +8,7 @@ import (
 
 // TempDir is a test helper function used to create a temporary dir
 func TempDir(t *testing.T) string {
-	dir, err := ioutil.TempDir(os.TempDir(), "go-scaffold")
+	dir, err := ioutil.TempDir(os.TempDir(), "test-dir")
 	if err != nil {
 		t.Error("Unable to create temporary directory. ", err)
 	}
